@@ -10,6 +10,7 @@ pub struct AssetToFundingMultiplier {
     cap: &'static str
 }
 
+
 pub struct PerpDex {
     name: &'static str,
     full_name: &'static str,

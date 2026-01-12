@@ -12,7 +12,7 @@ use axum::{
 };
 // use starwars::{QueryRoot, StarWars};
 use tokio::net::TcpListener;
-use reqwest::Client;
+use hypersdk::hypercore;
 
 
 async fn graphiql() -> impl IntoResponse {
@@ -21,7 +21,7 @@ async fn graphiql() -> impl IntoResponse {
 
 #[tokio::main]
 async fn main() {
-    let client = Client::new();
+    let client = hypercore::mainnet();
     let schema = Schema::build(Query, EmptyMutation, EmptySubscription)
         .data(client)
         .finish();
