@@ -1,0 +1,2 @@
+async_graphql::connection::Connection<Cursor, Node, ConnectionFields, EdgeFields, Name, EdgeName, async_graphql::connection::DisableNodesField>
+async_graphql::connection::Connection<Cursor, Node, ConnectionFields, EdgeFields, Name, EdgeName>
